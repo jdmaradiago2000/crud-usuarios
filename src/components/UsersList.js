@@ -4,7 +4,8 @@ import React from 'react';
 const UsersList = ({users, setUserSelected, removeUser}) => {
 
     return (
-        <ul className='box'>
+        <div className='father'>
+            <ul className='box'>
             {
                 users.map(user => (
                     <li className='second-box' key={user.id}>
@@ -28,7 +29,9 @@ const UsersList = ({users, setUserSelected, removeUser}) => {
                     </li>
                 ))
             }
-        </ul>
+            </ul>
+        </div>
+        
     );
 };
 
